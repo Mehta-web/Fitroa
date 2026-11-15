@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f9fc">
+  <meta name="description" content="Explore fitora's local exercise library with movement instructions, equipment filters, and safe technique guidance.">
+  <title>Exercise Library — fitora</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="page-common.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body class="exercise-library-page">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="fitora home"><span class="brand-mark">f</span> fitora</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html#home">Home</a><a href="index.html#my-plan">My Dashboard</a><a href="my-workout.html">My Workout</a><a href="progress.html">Progress</a><a href="exercise-library.html" aria-current="page">Exercise Library</a><a href="index.html#workouts">Explore Fitness Resources</a><a href="about-us.html">About Us</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">☾</button>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero section-wrap">
+      <div class="eyebrow">MOVE WITH CONFIDENCE</div>
+      <h1>Explore <span>Exercise Library</span></h1>
+      <p>Discover exercises, learn proper techniques and find the right movements for your fitness journey.</p>
+    </section>
+
+    <section class="section section-wrap library-page-section" id="library">
+      <div class="page-section-heading">
+        <div><div class="eyebrow">YOUR NEXT MOVEMENT</div><h2>Find an exercise <span>that fits.</span></h2></div>
+        <p>Search the local fitora catalog or combine muscle, difficulty, equipment, and exercise-type filters.</p>
+      </div>
+      <div class="library-tools">
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="exercise-search" type="search" placeholder="Search exercises..." aria-label="Search exercises"><button class="search-clear" id="clear-exercise-search" type="button" aria-label="Clear search" title="Clear search" hidden>×</button></label>
+        <select id="exercise-filter" aria-label="Filter by muscle group"><option value="all">All categories</option><option>Chest</option><option>Back</option><option>Shoulders</option><option>Biceps</option><option>Triceps</option><option>Core</option><option>Legs</option><option>Full Body</option><option>Flexibility</option><option>Mobility</option><option>Warm-up</option><option>Cool-down</option></select>
+        <select id="exercise-difficulty-filter" aria-label="Filter by difficulty"><option value="all">All difficulty levels</option><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select>
+        <select id="exercise-equipment-filter" aria-label="Filter by equipment"><option value="all">Any equipment</option><option value="none">No equipment</option><option value="dumbbells">Dumbbells</option><option value="band">Resistance bands</option><option value="chair">Chair or support</option></select>
+        <select id="exercise-type-filter" aria-label="Filter by exercise type"><option value="all">All exercise types</option><option value="timed">Timed</option><option value="reps">Repetitions</option></select>
+      </div>
+      <div class="library-feedback"><p class="library-result-count" id="library-result-count" aria-live="polite"></p><button class="text-link" id="reset-library-filters" type="button">All Exercises</button></div>
+      <div class="exercise-grid" id="exercise-grid" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="page-footer section-wrap">
+    <a class="brand" href="index.html" aria-label="fitora home"><span class="brand-mark">f</span> fitora</a>
+    <span>Your home. Your fitness. Your progress.</span>
+    <a href="my-workout.html">My Workout <span aria-hidden="true">→</span></a>
+  </footer>
+
+  <div class="modal-backdrop" id="exercise-modal" aria-hidden="true">
+    <article class="exercise-detail-modal" role="dialog" aria-modal="true" aria-labelledby="exercise-detail-title">
+      <button class="modal-close" id="exercise-modal-close" type="button" aria-label="Close exercise details">×</button>
+      <div id="exercise-detail-content"></div>
+    </article>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

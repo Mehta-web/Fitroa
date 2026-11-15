@@ -1,0 +1,13 @@
+{
+  "name": "fitguide",
+  "version": "1.0.0",
+  "private": true,
+  "description": "FitGuide personalized home workout planner",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

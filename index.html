@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f9fc">
+  <meta name="description" content="Personalized, beginner-friendly home workout plans and healthy habit guidance.">
+  <title>fitora — Your Home. Your Fitness. Your Progress.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="fitora home"><span class="brand-mark">f</span> fitora</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#my-plan">My Dashboard</a><a href="my-workout.html">My Workout</a><a href="progress.html">Progress</a><a href="exercise-library.html">Exercise Library</a><a href="#workouts">Explore Fitness Resources</a><a href="about-us.html">About Us</a>
+    </nav>
+    <div class="header-actions">
+      <button class="button button-small button-dark" data-open-wizard>Get started <span aria-hidden="true">↗</span></button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> A little stronger, every day</div>
+        <h1>Your fitness<br>journey starts <span>here.</span></h1>
+        <p class="hero-lede">Personalized home workouts, at your pace. Build strength, find your rhythm, and make healthy habits feel like yours.</p>
+        <div class="hero-actions">
+          <button class="button button-primary" data-open-wizard>Start your fitness journey <span aria-hidden="true">→</span></button>
+          <a class="button button-quiet" href="#workouts">Explore workouts <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-trust"><div class="avatar-stack"><span>✦</span><span>✺</span><span>●</span></div><p>Made for real life <b>·</b> No gym required</p></div>
+      </div>
+      <div class="hero-art">
+        <img class="hero-banner-image" src="Modern%20Fitness%20Progress%20Banner.png" alt="Person exercising beside fitness goals and progress graphics">
+      </div>
+    </section>
+
+    <section class="stats-strip section-wrap" aria-label="fitora benefits">
+      <div><strong>10–45</strong><span>minute sessions</span></div><i></i><div><strong>At home</strong><span>with what you have</span></div><i></i><div><strong>Your pace</strong><span>beginner to advanced</span></div><i></i><div><strong>Always</strong><span>room to rest</span></div>
+    </section>
+
+    <section class="section section-wrap" id="how">
+      <div class="section-heading"><div><div class="eyebrow">A simple place to begin</div><h2>Small steps.<br><span>Real momentum.</span></h2></div><p>You bring the willingness. We’ll help you turn it into a plan that fits your life—not the other way around.</p></div>
+      <div class="steps-grid">
+        <article class="step-card"><div class="step-top"><span class="step-number">01</span><span class="step-symbol">◎</span></div><h3>Tell us about you</h3><p>A few optional details help tailor your sessions to your experience, available time, and equipment.</p></article>
+        <article class="step-card"><div class="step-top"><span class="step-number">02</span><span class="step-symbol">⌘</span></div><h3>Choose what matters</h3><p>Pick the strength, mobility, or general fitness goals you want to work on. You can change them anytime.</p></article>
+        <article class="step-card"><div class="step-top"><span class="step-number">03</span><span class="step-symbol">↗</span></div><h3>Move at your pace</h3><p>Follow approachable instructions, take recovery days, and keep track of the progress you feel.</p></article>
+      </div>
+    </section>
+
+    <section class="section goals-section" id="goals">
+      <div class="section-wrap">
+        <div class="section-heading"><div><div class="eyebrow">Your goals, your way</div><h2>What would you like<br><span>to feel stronger in?</span></h2></div><p>Choose one focus or a few. There’s no perfect answer—just a place to start.</p></div>
+        <div class="goal-chips" id="goal-chips">
+          <button class="goal-chip" data-goal="Core strength"><span>◉</span> Core strength</button><button class="goal-chip" data-goal="Stronger arms"><span>↗</span> Arms</button><button class="goal-chip" data-goal="Chest strength"><span>✳</span> Chest</button><button class="goal-chip" data-goal="Stronger legs"><span>⌁</span> Legs</button><button class="goal-chip" data-goal="Shoulder strength"><span>✺</span> Shoulders</button><button class="goal-chip" data-goal="Back & posture"><span>⌘</span> Back & posture</button><button class="goal-chip" data-goal="Full body fitness"><span>✦</span> Full body</button><button class="goal-chip" data-goal="Flexibility"><span>〰</span> Flexibility</button><button class="goal-chip" data-goal="General fitness"><span>◌</span> General fitness</button>
+        </div>
+        <div class="goals-foot"><span>Strength, health, and gradual progress. Always.</span><button class="text-link" data-open-wizard>Build my plan <span>→</span></button></div>
+      </div>
+    </section>
+
+    <section class="section section-wrap" id="workouts">
+      <div class="section-heading"><div><div class="eyebrow">Made for your living room</div><h2>Good movement.<br><span>No fancy setup.</span></h2></div><a class="text-link" href="exercise-library.html">Browse exercise library <span>→</span></a></div>
+      <div class="workout-grid">
+        <article class="workout-card card-blue"><div class="workout-art art-stretch"><span class="exercise-person">〰</span><span class="art-spark">✦</span></div><div class="workout-meta"><span>GENTLE START</span><span>10 MIN</span></div><h3>Wake-up mobility</h3><p>A gentle flow to loosen up and greet the day.</p><button class="card-action" data-open-wizard>Make it yours <span>→</span></button></article>
+        <article class="workout-card card-peach"><div class="workout-art art-strength"><span class="exercise-person">✦</span><span class="art-spark">●</span></div><div class="workout-meta"><span>BODYWEIGHT</span><span>20 MIN</span></div><h3>Everyday strength</h3><p>Simple, full-body moves with room to adapt.</p><button class="card-action" data-open-wizard>Make it yours <span>→</span></button></article>
+        <article class="workout-card card-lilac"><div class="workout-art art-core"><span class="exercise-person">⌁</span><span class="art-spark">✧</span></div><div class="workout-meta"><span>CORE & CONTROL</span><span>15 MIN</span></div><h3>Steady core</h3><p>Build stability with calm, controlled movement.</p><button class="card-action" data-open-wizard>Make it yours <span>→</span></button></article>
+      </div>
+    </section>
+
+    <section class="dashboard-preview" id="my-plan">
+      <div class="section-wrap">
+        <div class="section-heading"><div><div class="eyebrow">Your personal space</div><h2>Your Fitness <span>Dashboard</span></h2></div><p>Everything you need to understand and track your fitness journey.</p></div>
+        <div class="preview-panel">
+          <div class="preview-welcome"><div><span class="eyebrow">YOUR DASHBOARD</span><h3 id="dashboard-greeting">Your next small win starts here.</h3><p id="dashboard-subtitle">Create your plan to see your personal schedule and progress.</p></div><button class="button button-primary" id="dashboard-start" data-open-wizard>Build my plan <span>→</span></button></div>
+          <div class="preview-cards">
+            <article class="preview-card today-card" id="my-workout"><div class="preview-card-head"><span>TODAY’S WORKOUT</span><span class="round-icon">↗</span></div><h4 id="today-title">A fresh start</h4><p id="today-summary">Your personalized session will appear here.</p><div class="preview-progress"><span id="today-progress"></span></div><small id="today-duration">Choose a goal to begin</small><ul class="today-exercise-list" id="today-exercises"></ul></article>
+            <article class="preview-card"><div class="preview-card-head"><span>UPCOMING WORKOUT</span><span class="round-icon">▦</span></div><h4 id="upcoming-title">Your next session</h4><p id="upcoming-summary">It will appear here once your plan is ready.</p><div class="week-dots" id="week-dots"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><small id="week-count">A week at your pace</small></article>
+            <article class="preview-card"><div class="preview-card-head"><span>YOUR PROGRESS</span><span class="round-icon">⌁</span></div><h4 id="completed-count">0 sessions</h4><p>Every completed session counts.</p><div class="preview-milestone">✦ <span id="minutes-count">0 active minutes so far</span></div><small id="dashboard-consistency">Weekly consistency: 0%</small></article>
+          </div>
+          <div class="schedule-wrap"><div class="schedule-title"><div><h3>Your weekly rhythm</h3><p>Balanced for movement and recovery.</p></div><button class="text-link" data-open-wizard>Edit goals <span>↗</span></button></div><div class="schedule-grid" id="schedule-grid"></div></div>
+          <div class="dashboard-details-grid">
+            <article class="dashboard-info-card"><div class="preview-card-head"><span>YOUR FITNESS PROFILE</span><span class="round-icon">◎</span></div><h3>Made for your routine</h3><dl class="profile-facts"><div><dt>Goals</dt><dd id="profile-goals">Create a plan to personalize your dashboard.</dd></div><div><dt>Experience</dt><dd id="profile-level">—</dd></div><div><dt>Equipment</dt><dd id="profile-equipment">—</dd></div><div><dt>Session time</dt><dd id="profile-duration">—</dd></div></dl></article>
+            <article class="dashboard-info-card recommendation-card"><div class="preview-card-head"><span>DAILY RECOMMENDATION</span><span class="round-icon">✦</span></div><h3 id="daily-recommendation-title">Start with what feels manageable.</h3><p id="daily-recommendation">Create a plan to see a recommendation shaped by your goals and completed workouts.</p></article>
+            <article class="dashboard-info-card"><div class="preview-card-head"><span>YOUR FAVORITES</span><span class="round-icon">♡</span></div><h3 id="favorite-count">0 saved exercises</h3><p id="favorite-summary">Save exercises from the library to keep them close.</p><a class="text-link" href="exercise-library.html">Browse exercises <span>→</span></a></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits-section">
+      <div class="section-wrap benefits-inner"><div><div class="eyebrow">A kinder kind of coaching</div><h2>Built around <span>you.</span></h2><p class="benefits-lede">Fitness isn’t one-size-fits-all. Your routine should make space for the rest of your life, too.</p><a class="text-link" href="#safety">Our approach to safe movement <span>→</span></a></div><div class="benefit-list"><article><span>01</span><div><h3>Personal, not prescriptive</h3><p>Your plan reflects your time, experience, goals, and available equipment.</p></div></article><article><span>02</span><div><h3>Progress without pressure</h3><p>No body comparisons or all-or-nothing challenges. Just small, sustainable steps.</p></div></article><article><span>03</span><div><h3>Rest is part of the plan</h3><p>Recovery days are built in because getting stronger means giving yourself time.</p></div></article></div></div>
+    </section>
+
+    <section class="section section-wrap tips-section" id="nutrition">
+      <div class="section-heading"><div><div class="eyebrow">Wellness beyond the workout</div><h2>Healthy habits, <span>kept simple.</span></h2></div><p>No strict rules or quick fixes. Just practical foundations to support how you feel.</p></div>
+      <div class="tips-grid"><article><span class="tip-icon">◒</span><h3>Build a balanced plate</h3><p>Include a variety of foods: fruits or vegetables, grains, and protein sources you enjoy.</p></article><article><span class="tip-icon">✳</span><h3>Give your body building blocks</h3><p>Protein from foods like beans, eggs, dairy, fish, or tofu supports everyday muscle repair.</p></article><article><span class="tip-icon">◌</span><h3>Rest and rehydrate</h3><p>Drink water regularly, sleep as well as you can, and allow time for recovery between sessions.</p></article></div>
+      <p class="nutrition-note">General education only—not individualized nutrition or medical advice.</p>
+    </section>
+
+    <section class="section section-wrap assistant-section" id="assistant">
+      <div class="assistant-card"><div class="assistant-visual"><div class="assistant-orbit">✦</div><div class="assistant-bubble">Hey there!<br><span>What would you like to know?</span></div><div class="assistant-spark">✧</div></div><div class="assistant-copy"><div class="eyebrow">A little help, whenever</div><h2>Questions? <span>Let’s talk it through.</span></h2>      <p>Get simple, friendly guidance on exercises, your plan, and recovery. fitora’s built-in guide is educational—it isn’t a live AI service or a substitute for professional advice.</p><div class="assistant-form"><input id="assistant-input" type="text" placeholder="Ask about an exercise or your routine..." aria-label="Ask the fitora assistant"><button class="button button-dark" id="assistant-send" aria-label="Send question">→</button></div><div id="assistant-answer" class="assistant-answer" aria-live="polite"></div></div></div>    </section>
+
+    <section class="section-wrap" id="safety"><div class="safety-banner"><span class="safety-icon">♡</span><div><b>Your wellbeing comes first.</b><p>fitora is for general fitness education, not medical care. If you have a health concern, injury, or are unsure whether exercise is appropriate, check with a qualified healthcare professional before starting. Stop if you feel pain, dizziness, or unusual discomfort.</p></div><a href="#disclaimer">Read our health note <span>→</span></a></div></section>
+
+    <section class="section section-wrap faq-section" id="faq"><div class="section-heading"><div><div class="eyebrow">Good to know</div><h2>A few things <span>you might wonder.</span></h2></div></div><div class="faq-list">
+      <details><summary>Do I need equipment to get started?<span>+</span></summary><p>No. You can choose bodyweight sessions and everyday movements. If you have equipment, you can include it in your preferences.</p></details>
+      <details><summary>How is my personal information stored?<span>+</span></summary><p>Your profile and workout history stay in this browser. When generating a plan, fitora sends the selected fitness details only to its own local recommendation engine; no AI provider or external service receives them. Your name and contact details are not used by the engine. You can delete locally stored data from your dashboard.</p></details>
+      <details><summary>Is fitora medical or professional advice?<span>+</span></summary><p>No. fitora provides general fitness education and planning, not diagnosis or treatment. Talk with a qualified professional about health conditions, pain, or exercise limitations.</p></details>
+      <details><summary>What if I miss a workout or need to change my plan?<span>+</span></summary><p>That’s okay—your progress is not a streak to protect. Update your goals or preferences whenever you like, and take rest when you need it.</p></details>
+    </div></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main section-wrap"><div class="footer-brand"><a class="brand" href="#home"><span class="brand-mark">f</span> fitora</a><p>Your home. Your fitness.<br>Your progress.</p></div><div class="footer-links"><div><b>Explore</b><a href="#how">How it works</a><a href="#workouts">Workouts</a><a href="exercise-library.html">Exercise library</a><a href="progress.html">Progress tracker</a></div><div><b>Learn</b><a href="#nutrition">Nutrition & habits</a><a href="#assistant">Fitness assistant</a><a href="#faq">FAQs</a><a href="about-us.html">About fitora</a></div>    <div><b>Good to know</b><a href="#privacy">Privacy</a><a href="#disclaimer">Health disclaimer</a><a href="#contact">Contact us</a></div></div></div>
+    <div class="footer-bottom section-wrap"><span>© <span id="year"></span> fitora. Made for your everyday.</span><span>Mehta</span></div>
+  </footer>
+
+  <section class="section section-wrap hidden" id="progress">
+    <div class="section-heading"><div><div class="eyebrow">Your own progress</div><h2>Your <span>Progress</span></h2></div><button class="text-link" id="download-plan">Download my plan ↓</button></div>
+    <div class="progress-layout"><div class="progress-summary"><div class="progress-stat"><span>COMPLETED WORKOUTS</span><strong id="progress-workouts">0</strong><small>Every session matters</small></div><div class="progress-stat"><span>EXERCISES COMPLETED</span><strong id="progress-exercises">0</strong><small>One movement at a time</small></div><div class="progress-stat"><span>ACTIVE MINUTES</span><strong id="progress-minutes">0</strong><small>Time you made for you</small></div><div class="progress-stat"><span>THIS WEEK</span><strong id="progress-week">0</strong><small>Sessions this week</small></div><div class="progress-stat"><span>WEEKLY CONSISTENCY</span><strong id="progress-consistency">0%</strong><small id="consistency-caption">Completed sessions vs. your weekly plan</small></div><div class="progress-stat"><span>STRENGTH MILESTONES</span><strong id="progress-milestones">0</strong><small>Personal wins you’ve recorded</small></div></div><div class="activity-card"><div><h3>Weekly activity</h3><p>Completed exercise minutes in the last seven days</p></div><div class="activity-chart" id="activity-chart"></div></div></div>
+    <div class="progress-extras"><article class="history-card chart-history-card"><div class="history-title"><div><h3>Monthly workout history</h3><p>Completed sessions across the last four weeks</p></div><span class="round-icon">▦</span></div><div class="monthly-chart" id="monthly-chart" aria-label="Monthly workout history chart"></div></article><article class="history-card"><div class="history-title"><div><h3>Exercise consistency</h3><p>Sessions and exercises actually recorded by fitora</p></div><span class="round-icon">⌁</span></div><div class="consistency-visual" id="exercise-consistency"></div></article></div>
+    <div class="progress-extras"><article class="history-card"><div class="history-title"><div><h3>Workout history</h3><p>Your sessions, saved on this device.</p></div><span class="round-icon">↗</span></div><div id="workout-history"></div></article><article class="wins-card"><div><h3>Your strength wins</h3><p>Notice an improvement? Keep a note for yourself.</p></div><form id="strength-win-form"><input id="strength-win-input" maxlength="160" placeholder="e.g. I felt steadier during my chair squats" aria-label="Describe a strength win"><button class="button button-dark" type="submit">Save win</button></form><div id="strength-wins"></div><div class="milestone-note" id="milestone-note"></div></article></div>
+    <div class="profile-actions"><button class="button button-quiet" data-open-wizard>Edit my plan</button><label class="reminder-control">Workout reminder <input type="time" id="reminder-time" aria-label="Workout reminder time"><button class="text-link" id="set-reminder">Save time</button></label><button class="text-link text-danger" id="delete-data">Delete my data</button></div>
+  </section>
+
+  <section class="section section-wrap hidden" id="about"><div class="section-heading"><div><div class="eyebrow">A little about us</div><h2>Fitness that meets <span>you where you are.</span></h2></div><p>fitora is a home fitness education concept built to make moving feel more approachable and personal. No gym required, no comparisons—just thoughtful guidance and a plan that can grow with you.</p></div></section>
+  <section class="section section-wrap hidden" id="privacy"><div class="section-heading"><div><div class="eyebrow">Privacy</div><h2>Your information <span>stays yours.</span></h2></div><p>fitora stores your profile, plan, preferences, and workout history in this browser. For plan generation, the selected fitness details are sent only to fitora’s own local rule-based engine; no external AI service, API, or provider receives them. Your name and contact details are not used by the engine. The server does not persist the generation request. Use “Delete my data” to clear local fitora data.</p></div></section>
+  <section class="section section-wrap hidden" id="disclaimer"><div class="section-heading"><div><div class="eyebrow">Health disclaimer</div><h2>Move safely. <span>Listen to your body.</span></h2></div><p>fitora provides general fitness education and workout-planning suggestions. It is not a medical service and does not diagnose, treat, or replace advice from a qualified healthcare professional. Consult a professional before beginning if you have a health concern, injury, or exercise limitation. Stop exercising if you experience pain, dizziness, or unusual discomfort. People under 18 should involve a parent/guardian and qualified professional as appropriate; plans focus on general movement, not weight loss or body transformation.</p></div></section>
+  <section class="section section-wrap hidden" id="contact"><div class="section-heading"><div><div class="eyebrow">Contact</div><h2>We’re here to <span>help you begin.</span></h2></div><p>This standalone demo has no support inbox or message server configured yet. For launch, connect a real contact address or secure support endpoint. For general movement questions, try the educational fitora assistant.</p></div></section>
+
+  <div class="modal-backdrop" id="wizard-modal" aria-hidden="true">
+    <section class="wizard" role="dialog" aria-modal="true" aria-labelledby="wizard-title">
+      <button class="modal-close" id="wizard-close" aria-label="Close setup">×</button>
+      <div class="wizard-progress"><span id="wizard-progress"></span></div>
+      <div class="wizard-top"><span id="wizard-step-label">STEP 1 OF 3</span><span>About 1 minute</span></div>
+      <div class="wizard-content" id="wizard-content"></div>
+      <div class="wizard-error" id="wizard-error" role="alert"></div>
+      <div class="wizard-nav"><button class="button button-quiet" id="wizard-back">Back</button><button class="button button-primary" id="wizard-next">Continue <span>→</span></button></div>
+      <p class="wizard-privacy">Your profile stays in this browser. fitora uses its own local rules engine; no external AI service is contacted. <a href="#privacy">How we use your data</a></p>
+    </section>
+  </div>
+
+  <div class="modal-backdrop" id="workout-modal" aria-hidden="true">
+    <section class="workout-player" role="dialog" aria-modal="true" aria-labelledby="player-title">
+      <button class="modal-close" id="player-close" aria-label="Close workout">×</button>
+      <div class="player-top"><span id="player-step">EXERCISE 1 OF 4</span><span id="player-day">TODAY’S SESSION</span></div>
+      <div class="player-progress"><span id="player-progress"></span></div>
+      <div id="player-content"></div>
+      <div class="player-controls">
+        <div class="player-control-row"><button class="button button-primary" id="player-start">Start exercise</button><button class="button button-quiet" id="player-pause" disabled>Pause</button><button class="button button-quiet" id="player-rest">Rest timer</button></div>
+        <div class="player-control-row"><button class="button button-quiet" id="player-skip">Skip exercise</button><button class="button button-primary" id="player-next">Complete set →</button></div>
+      </div>
+      <p class="player-safety">Stop if you feel pain, dizziness, or unusual discomfort.</p>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
